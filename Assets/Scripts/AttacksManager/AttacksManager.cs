@@ -14,6 +14,7 @@ public class AttacksManager : MonoBehaviour
 
     private List<GameObject> AtacksVfx2 = new List<GameObject>();
     private int AttackIndex = 0;
+    private float fireTime = 5f;
 
     void Start()
     {
@@ -96,6 +97,26 @@ public class AttacksManager : MonoBehaviour
         yield return new WaitForSeconds(AnimationTime);
         AttackValue = 0f;
         anim.SetFloat("Attack", AttackValue);
+        if(vfx.GetComponent<Rigidbody>() != null)
+        {
+            Rigidbody rb = vfx.GetComponent<Rigidbody>();
+            rb.useGravity = true;
+            rb.isKinematic = false;
+            rb.AddForce((this.transform.forward + Vector3.up)*10f, ForceMode.Impulse);
+            Debug.Log("Gravity activated on VFX Rigidbody.");
+            yield return new WaitForSeconds(fireTime);
+            rb.useGravity = false;
+            rb.isKinematic = true;
+            rb.linearVelocity = Vector3.zero;
+            vfx.transform.localPosition = Vector3.zero;
+            Debug.Log("Gravity deactivated on VFX Rigidbody.");
+            
+        }
+
         vfx.SetActive(false);
+    }
+    void activeAttack()
+    {
+        // This method is intentionally left empty.
     }
 }
