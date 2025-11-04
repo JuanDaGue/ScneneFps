@@ -32,6 +32,37 @@ Transform:
   - {fileID: 2425504591537596163}
   m_Father: {fileID: 3086308183428324621}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &168247475877778616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5195415199893099203}
+  m_Layer: 6
+  m_Name: KatanaPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5195415199893099203
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168247475877778616}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.83}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2161603721475136037}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &233192389665207735
 GameObject:
   m_ObjectHideFlags: 0
@@ -1935,6 +1966,7 @@ Transform:
   - {fileID: 727267133190886560}
   - {fileID: 7017467637075749575}
   - {fileID: 5261754566956510995}
+  - {fileID: 5195415199893099203}
   - {fileID: 7361050450750828817}
   m_Father: {fileID: 5319031324733124532}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2105,9 +2137,11 @@ MonoBehaviour:
   AtacksVfx:
   - {fileID: 6988804850658643804, guid: f714018c2390bd64ca4324de2a1d5425, type: 3}
   - {fileID: 407954966225478942, guid: 35abfdca450ba4847b0c64c78fbac92f, type: 3}
+  - {fileID: 2150395925072591078, guid: d68c13304f7eb6e42b113db2e7f8420f, type: 3}
   TransformAtacksVfx:
   - {fileID: 1263023771451906833}
   - {fileID: 8560664489288238529}
+  - {fileID: 5195415199893099203}
 --- !u!1 &5896469458672877338
 GameObject:
   m_ObjectHideFlags: 0

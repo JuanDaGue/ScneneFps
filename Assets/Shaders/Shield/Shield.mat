@@ -51,11 +51,11 @@ Material:
     - _Blend: 2
     - _Boolean: 0
     - _CastShadows: 1
-    - _Cull: 2
+    - _Cull: 0
     - _DstBlend: 1
     - _Edge_Width: 1
     - _HexScale: 1
-    - _MainPower: 2.05
+    - _MainPower: 2.47
     - _QueueControl: 0
     - _QueueOffset: 0
     - _SrcBlend: 5
